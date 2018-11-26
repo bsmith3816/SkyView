@@ -9,7 +9,7 @@ public class SkyView {
                 view[i][j] = scanned[j + (numCols * i)];
             }
         }
-        for(int i = 1; i < numRows; i+=2){
+        for(int i = 1; i < numRows; i += 2){
             int k = i * numCols;
             for(int j = numCols-1; j >= 0; j--){
                 view[i][j] = scanned[k];
@@ -24,7 +24,7 @@ public class SkyView {
         int divisor = 0;
         for(int i = startRow; i <= endRow; i++){
             for(int j = startCol; j <= endCol; j++){
-                sum += view[i][j];
+                sum += this.view[i][j];
                 divisor++;
             }
         }
